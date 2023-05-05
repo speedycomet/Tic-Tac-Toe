@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color: rgb(51, 49, 49);
+    position: relative;
+}
+
+h1{
+    font-size: 80px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#names{
+    position: absolute;
+    /* top: 35%; */
+    width: 100%;
+    height: max-content;
+    display: block;
+    transition: 1s;
+}
+
+#p1,#p2{
+    /* position: absolute; */
+    margin-top: 4px;
+    width: 50%;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: rgb(195, 209, 237);
+    font-family: 'Patrick Hand', cursive;
+    color: #3C2A21;
+    border: none;
+}
+
+::placeholder{
+    color: rgb(162, 167, 172);
+    font-size: 30px;
+}
+
+#p1:focus, #p2:focus{
+    font-size: 35px;
+    outline: none;
+    background-color: rgb(204, 240, 228);
+    border-radius: 15px;
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+#p2{
+    margin-top: 40px;
+    top: 100%;
+}
+
+#start{
+    margin-top: 40px;
+    width: 20%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 40px;
+    font-family: 'Patrick Hand', cursive;
+    background-color: #FFD3B0;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+#start:hover{
+    background-color: #E8A0BF;
+}
+
+#start:active{
+    transform: translateY(2px);
+    transition: 0.1s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: in 1s ease-out;
+}
+
+@keyframes in{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+  
+
+#game{
+    display: none;
+    /* transition: 1s; */
+    width: 100%;
+    height: max-content;
+}
+
+#top{
+    display: flex;
+}
+
+#player1, #player2{
+    flex: 1;
+    font-size: 40px;
+    margin: auto;
+    font-family: 'Patrick Hand', cursive;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+}
+
+#play{
+    flex: 40%;
+    width: 100%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+}
+
+.playArea{
+    width: 130px;
+    height: 130px;
+    border: 1px solid black;
+    margin: 20px;
+    background-color: rgb(195, 209, 237);
+    font-size: 135px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    border-radius: 10px;
+}
+
+.playArea:hover{
+    background-color: #E8A0BF;
+    /* box-shadow: 1px 2px 0px 1px rgb(183, 181, 181); */
+    outline: none;
+    border: none;
+}
+
+.playArea:disabled{
+    background-color: rgb(195, 209, 237);
+}
+
+#right, #left{
+    margin: auto;
+    flex: 30%;
+    width: max-content;
+    font-family: 'Patrick Hand', cursive;
+    font-size: 55px;
+    /* visibility: hidden; */
+}
+
+#right{
+    padding-left: 7%;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 40px;
+}
+
+.setbtn{
+    margin: 25px 30px;
+    width: 200px;
+    height: 50px;
+    line-height: 1;
+    border-radius: 20px;
+    font-size: 32px;
+    font-family: 'Patrick Hand', cursive;
+    background-color: #FFD3B0;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 1px 2px 5px 1px black;
+}
+
+.small-x{
+    font-size: 20px;
+    vertical-align: middle;
+}

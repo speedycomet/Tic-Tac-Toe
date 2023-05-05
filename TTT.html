@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="TTT.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
+</head>
+
+<body>
+    <div id="names">
+        <div class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <input type="text" placeholder="Enter Player1 Name ✖️" id="p1" autocomplete="off" autocapitalize="onclick"><br>
+        <input type="text" placeholder="Enter Player2 Name ⭕" id="p2" autocomplete="off"><br>
+        <button id="start">START</button>
+        <h1>✖️ ⭕</h1>
+    </div>
+
+    <div id="game">
+        <div id="top">
+            <div id="player1">
+                PLAYER 1
+            </div>
+            <div id="player2">
+                PLAYER 2
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="left"></div>
+            <div id="play">
+                <input type="text" class="playArea" id="btn1" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn2" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn3" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn4" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn5" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn6" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn7" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn8" onclick="myfunc();"></input>
+                <input type="text" class="playArea" id="btn9" onclick="myfunc();"></input>
+            </div>
+
+            <div id="right">
+                
+            </div>
+        </div>
+        <button class="setbtn" id="reset" onclick="restartGame()">RESTART GAME</button>
+        <button class="setbtn" id="reload" onclick="reloadGame()">RELOAD GAME</button>
+    </div>
+
+    <script src="TTT.js"></script>
+</body>
+
+</html>
